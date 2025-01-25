@@ -1,4 +1,5 @@
-import { View } from "react-native";
+import { View , StyleSheet , Text } from "react-native";
+
 
 export default function profile () {
     return(
@@ -7,3 +8,14 @@ export default function profile () {
         </View>
     )
 }
+
+
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }
+});

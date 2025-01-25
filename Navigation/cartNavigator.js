@@ -1,27 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {Tabs} from "./Navigation/Tabs"
-import cart from '../pages/cart';
+import Cart from '../pages/Cart'; // Ensure Cart component is correctly imported from the right path
 
+const Stack = createNativeStackNavigator();
 
-const stack = createNativeStackNavigator();
-
-export default function cartNavigator() {
+export default function CartNavigator() {
   return (
-    <NavigationContainer>
-      
-         <stack.Screen
-           name="cart"
-           component={cart}
-
-         
-         />
-        
-            
-        
-    </NavigationContainer>
+    <Stack.Navigator>
+      {/* Cart Screen */}
+      <Stack.Screen 
+        name="Cart" 
+        component={Cart} 
+        options={{ title: 'Shopping Cart' }} // Optional: Set a custom title for the Cart screen
+      />
+    </Stack.Navigator>
   );
 }
 

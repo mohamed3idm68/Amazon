@@ -1,28 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {Tabs} from "./Navigation/Tabs"
 import profile from '../pages/profile';
 
 
-const stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function profileNavigator() {
   return (
 
-    <NavigationContainer>
+    <Stack.Navigator>
       
-         <stack.Screen
+         <Stack.Screen
            name="profile"
            component={profile}
 
          
          />
+         
+    </Stack.Navigator>
         
             
         
-    </NavigationContainer>
+
   );
 }
 

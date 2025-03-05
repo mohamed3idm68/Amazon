@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeNavigator from "./homeNavigor";
@@ -7,18 +7,28 @@ import ProfileNavigator from "./profileNavigator"
 
 const Tab = createBottomTabNavigator();
 
-export default function App() {
+export default function Tabs() {
   return (
     <Tab.Navigator>
-        <Tab.screen 
+        <Tab.Screen 
           name="HomeNavigator"
           component={HomeNavigator}
+          options={{
+            // tabBarIcon: ({focused}) => {
+              // return (
+                // <Icon name="home"  />
+              // )
+            // },
+            
+            headerShown: false,
+            title:""
+          }}
         />
-        <Tab.screen 
+        <Tab.Screen 
           name="ProfileNavigator"
           component={ProfileNavigator}
         />
-        <Tab.screen 
+        <Tab.Screen 
           name="cartNavigator"
           component={cartNavigator}
         />

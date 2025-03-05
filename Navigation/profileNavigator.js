@@ -1,7 +1,7 @@
-
 import { StyleSheet, Text, View } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import profile from '../pages/profile';
+
 
 
 const Stack = createNativeStackNavigator();

@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import { StyleSheet , Text } from "react-native";
 
-export default function item () {
+export default function Item () {
     return(
         <View style ={styles.container}>
             <Text>item page</Text>

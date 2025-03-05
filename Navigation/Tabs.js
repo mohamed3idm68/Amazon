@@ -1,9 +1,17 @@
 
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeNavigator from "./homeNavigor";
-import cartNavigator from "./cartNavigator"
-import ProfileNavigator from "./profileNavigator"
+import HomeNavigator from './HomeNavigator';
+import profileNavigator from "./profileNavigator";
+import cartNavigator from './cartNavigator';
+
+
+
+
+
+
+
+
 
 const Tab = createBottomTabNavigator();
 
@@ -26,7 +34,7 @@ export default function Tabs() {
         />
         <Tab.Screen 
           name="ProfileNavigator"
-          component={ProfileNavigator}
+          component={profileNavigator}
         />
         <Tab.Screen 
           name="cartNavigator"

@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 
 
 
+
 const Stack = createNativeStackNavigator();
 
 export default function HomeNavigator() {

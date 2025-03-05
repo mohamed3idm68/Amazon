@@ -5,6 +5,7 @@ import cart from '../pages/cart';
 
 
 
+
 const Stack = createNativeStackNavigator();
 
 export default function cartNavigator() {
